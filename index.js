@@ -319,6 +319,8 @@ app.put("/api/products/:id", (req, res) => {
 
 
 // START THE SERVER
-app.listen(8800, () => {
-    console.log("Server is running on port 8800");
+const port = process.env.PORT || 8800;
+
+app.listen(port, () => {
+    console.log("Server is running...");
 })
